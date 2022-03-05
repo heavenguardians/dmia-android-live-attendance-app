@@ -8,7 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LiveAttendanceApp">
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".views.changepass.ChangePasswordActivity"
+            android:exported="false" />
         <activity
             android:name=".views.forgotpass.ForgotPasswordActivity"
             android:exported="false" />
@@ -19,7 +22,7 @@
             android:name=".views.splash.SplashActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".views.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +30,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API.KEY"
+            android:value="@string/google_maps_key" />
     </application>
 
 </manifest>

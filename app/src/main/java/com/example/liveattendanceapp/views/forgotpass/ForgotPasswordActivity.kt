@@ -1,8 +1,7 @@
 package com.example.liveattendanceapp.views.forgotpass
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.liveattendanceapp.R
+import androidx.appcompat.app.AppCompatActivity
 import com.example.liveattendanceapp.databinding.ActivityForgotPasswordBinding
 
 class ForgotPasswordActivity : AppCompatActivity() {
